@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="result.html" method="GET">
+        <div class="formInput">
+            <label for="PktSum">Punktsumme:</label>
+            <input type="number" name="Punktsumme" id="PktSum" min="200" max="600" required>
+        </div>
+        <div class="formInput">
+            <label for="schr1">schriftliche Prüfung 1:</label>
+            <input type="number" name="schriftliche Prüfung 1" id="schr1" min="0" max="15" required>
+        </div>
+        <div class="formInput">
+            <label for="schr2">schriftliche Prüfung 2:</label>
+            <input type="number" name="schriftliche Prüfung 2" id="schr2" min="0" max="15" required>
+        </div>
+        <div class="formInput">
+            <label for="schr3">schriftliche Prüfung 3:</label>
+            <input type="number" name="schriftliche Prüfung 3" id="schr3" min="0" max="15" required>
+        </div>
+        <div class="formInput">
+            <label for="mndl1">mündliche Prüfung 1:</label>
+            <input type="number" name="mündliche Prüfung 1" id="mndl1" min="0" max="15" required>
+        </div>
+        <div class="formInput">
+            <label for="mndl2">mündliche Prüfung 2 / Seminarkurs:</label>
+            <input type="number" name="mündliche Prüfung 2 / Seminarkurs" id="mndl2" min="0" max="15" required>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Ausrechnen</button>
+    </form>
+
+    <p class="anmerkung">Die Punktsumme steht auf dem Zeugnisblatt rechts unter "III. Gesamtqualifikation und Durchschnittsnote".</p>
+</body>
+</html>

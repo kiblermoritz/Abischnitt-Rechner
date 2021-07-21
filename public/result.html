@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <div>
+            <p>Schnitt in Punkten:</p>
+            <span id="schnittPkt"></span>
+        </div>
+        <div>
+            <p>Schnitt:</p>
+            <span id="schnittNote"></span>
+        </div>
+    </div>
+    <a href="index.html">Zurück</a>
+    
+    <script>
+        let inputs = new Array();
+        new URLSearchParams(window.location.search).forEach((value) => {
+            inputs.push(parseInt(value));
+        });
+        let schnittPkt = (((inputs[1] + inputs[2] + inputs[3] + inputs[4] + inputs[5]) / 5) + (2 * inputs[0] / 40)) / 3;
+        let schnittNote = (5 + (2 / 3)) - (schnittPkt * (1 / 3));
+
+        document.getElementById("schnittPkt").append(Math.round(schnittPkt * 100) / 100);
+        document.getElementById("schnittNote").append(Math.round(schnittNote * 100) / 100);
+    </script>
+</body>
+</html>
