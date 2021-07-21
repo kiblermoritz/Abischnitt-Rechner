@@ -1,0 +1,28 @@
+{
+  "name": "abischnitt-rechner",
+  "version": "1.0.0",
+  "description": "Das ist ein Rechner einer um den Abi schnitt zu berechnen",
+  "main": "index.js",
+  "dependencies": {
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^2.2.5"
+  },
+  "scripts": {
+    "test": "live-server ./public",
+    "build-css": "tailwindcss build -i src/styles.css -c ./tailwind.config.js -o public/styles.css --watch",
+    "live-server": "live-server ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiblermoritz/Abischnitt-Rechner.git"
+  },
+  "author": "Moritz Kiber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiblermoritz/Abischnitt-Rechner/issues"
+  },
+  "homepage": "https://github.com/kiblermoritz/Abischnitt-Rechner#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
