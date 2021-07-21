@@ -1,0 +1,19 @@
+{
+  "name": "abischnitt-rechner",
+  "version": "1.0.0",
+  "description": "Dies ist ein Rechner um den Abi Durchschnitt zu berechnen.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiblermoritz/Abischnitt-Rechner.git"
+  },
+  "author": "Moritz Kiber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiblermoritz/Abischnitt-Rechner/issues"
+  },
+  "homepage": "https://github.com/kiblermoritz/Abischnitt-Rechner#readme"
+}
