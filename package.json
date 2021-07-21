@@ -1,10 +1,15 @@
 {
   "name": "abischnitt-rechner",
   "version": "1.0.0",
-  "description": "Dies ist ein Rechner um den Abi Durchschnitt zu berechnen.",
-  "main": "index.html",
+  "description": "Das ist ein Rechner einer um den Abi schnitt zu berechnen",
+  "main": "index.js",
+  "dependencies": {
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^2.2.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "live-server ./public",
+    "build-css": "tailwindcss build -i src/styles.css -c ./tailwind.config.js -o public/styles.css --watch",
     "live-server": "live-server ./public"
   },
   "repository": {
@@ -17,7 +22,7 @@
     "url": "https://github.com/kiblermoritz/Abischnitt-Rechner/issues"
   },
   "homepage": "https://github.com/kiblermoritz/Abischnitt-Rechner#readme",
-  "dependencies": {
+  "devDependencies": {
     "live-server": "^1.2.1"
   }
 }
