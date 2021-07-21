@@ -9,18 +9,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <div>
-            <p>Schnitt in Punkten:</p>
-            <span id="schnittPkt"></span>
-        </div>
-        <div>
-            <p>Schnitt:</p>
-            <span id="schnittNote"></span>
-        </div>
+
+  <div class="dark:bg-black bg-gray-200 flex items-center justify-center h-screen overflow-hidden">
+    <div class="md:w-1/5 mt-8 space-y-6 bg-white shadow overflow-hidden rounded-lg p-5 dark:bg-gray-900 dark:text-white">
+      <img src="./assets/undraw_exams_g4ow.svg" alt="">
+
+      <h1 class="text-xl">Dein Schnitt ist:</h1>
+      <p class="text-5xl w-100 text-center" id="schnittPkt"></p>
+      <p class="">In Noten wäre das eine:</p>
+      <p id="schnittNote" class="text-3xl w-100  text-center"></p>
+      <div class="w-100 text-center">
+        <a href="index.html" class="text-center w-100  text-indigo-400 font-bold rounded p-2 outline-none bg-gray-900 dark:bg-gray-300 dark:text-black mt-8" style="margin: 20px 0px 0px 0px;">Zurück</a>
+      </div>
     </div>
-    <a href="index.html">Zurück</a>
-    
+  </div>
+
     <script>
         let inputs = new Array();
         new URLSearchParams(window.location.search).forEach((value) => {
